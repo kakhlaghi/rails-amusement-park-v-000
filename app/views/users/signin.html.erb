@@ -1,6 +1,6 @@
 <%= form_tag ('/users/login') do %>
   <!--<input name=user[name] type="text" id="name">-->
-  Name: <%=select("user", "name", User.all.collect {|p| [ p.name, p.id ] }, { include_blank: true })%>
+  Name: <%=select("user", "name", User.all {|p| [ p.name, p.id ] }, { include_blank: true })%>
   Password: <input name=user[password] type="text" id="password">
   <input type="submit" value='Sign In'>
 <% end %>
