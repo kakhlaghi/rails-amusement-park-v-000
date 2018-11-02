@@ -15,8 +15,7 @@ def require_logged_in
 end
 
   def current_user
-    binding.pry
-    session[:user_id]
+        session[:user_id]
   end
 
 end
