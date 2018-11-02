@@ -13,5 +13,6 @@ class User < ActiveRecord::Base
       return "sad"
     end
   end
+  end
 
 end
