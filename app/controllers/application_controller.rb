@@ -15,7 +15,7 @@ def require_logged_in
 end
 
   def current_user
-    session[:user_id]
+      @current_user = session[:user_id]
   end
 
 end
