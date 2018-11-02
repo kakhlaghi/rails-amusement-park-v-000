@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   resources :attractions
   get '/signin', to: 'sessions#new'
   post '/signin', to: 'sessions#create'
-  root 'users#new'
+  root 'static#home'
 end
