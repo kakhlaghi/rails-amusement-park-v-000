@@ -19,7 +19,8 @@ def require_logged_in
 end
 
   def current_user
-    @current_user = User.find(session[:user_id])
+    #session[:user_id] = params[:user_id]
+    current_user
   end
 
 end
