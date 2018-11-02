@@ -14,7 +14,7 @@ def require_logged_in
 end
 
   def current_user
-    session[:user_id] = params[:use.id]
+    session[:user_id] = params[:user.id]
   end
 
 end
