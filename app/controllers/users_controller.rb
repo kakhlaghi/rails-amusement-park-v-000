@@ -13,7 +13,6 @@ class UsersController < ApplicationController
 
   def create
     #"name"=>"Amy Poehler", "password"=>"password", "height"=>"58", "tickets"=>"15", "happiness"=>"3", "nausea"=>"2"
-    binding.pry
     @user = User.new(user_params)
       if @user.save
         session[:user_id] = @user.id
