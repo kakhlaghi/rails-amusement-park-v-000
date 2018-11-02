@@ -1,6 +1,8 @@
 <%= form_tag ({controller: 'sessions', action: 'create'}) do %>
   <!--<input name=user[name] type="text" id="name">-->
   <%=select("user", "name", User.all.collect {|p| [ p.name, p.id ] }, { include_blank: true })%>
+  Name: <%=collection_select(:user, :name, User.all, :id)%>
+
   <input name=user[password] type="text" id="password">
   <input type="submit" value='Sign In'>
 <% end %>
