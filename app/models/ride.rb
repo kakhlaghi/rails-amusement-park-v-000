@@ -9,9 +9,9 @@ class Ride < ActiveRecord::Base
     elsif !enough_tickets && tall_enough
       return "Sorry. " + not_enough_tickets
     elsif enough_tickets && !tall_enough
-      "Sorry. " + not_tall_enough
+      return "Sorry. " + not_tall_enough
     else
-      "Sorry. " + not_enough_tickets + " " + not_tall_enough
+      return "Sorry. " + not_enough_tickets + " " + not_tall_enough
     end
   end
 
