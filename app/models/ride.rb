@@ -7,9 +7,9 @@ class Ride < ActiveRecord::Base
     if enough_tickets && tall_enough
       ride_attraction
     elsif !enough_tickets && tall_enough
-       "Sorry. " + not_enough_tickets
+      render plain: "Sorry. " + not_enough_tickets
     elsif enough_tickets && !tall_enough
-       "Sorry. " + not_tall_enough
+       render plain: "Sorry. " + not_tall_enough
     else
        "Sorry. " + not_enough_tickets + " " + not_tall_enough
     end
