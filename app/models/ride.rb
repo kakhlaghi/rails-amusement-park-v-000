@@ -20,7 +20,6 @@ class Ride < ActiveRecord::Base
     if self.user.tickets >= self.attraction.tickets
       enough_tickets = true
     end
-
     if self.user.height >= self.attraction.min_height
       tall_enough = true
     end
