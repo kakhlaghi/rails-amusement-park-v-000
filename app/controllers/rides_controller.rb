@@ -7,5 +7,5 @@ class RidesController < ApplicationController
   @message = @ride.take_ride
   redirect_to user_path(@ride.user, :message => @message)
 end
-  
+
 end
