@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   post '/signin', to: 'sessions#create'
   root 'static#home'
   delete "/signout", to: "sessions#destroy"
-  post '/rides/new', to: "rides/new"
+  post '/rides/new', to: "rides#new"
 end
